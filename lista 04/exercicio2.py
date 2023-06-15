@@ -11,7 +11,6 @@ for i in range(20):
     else:
         vetorimpar.append(numero)
 
-#trocar se n puder usar
 vetorpar2 = sorted(vetorpar)
 vetorimpar2 = sorted(vetorimpar, reverse=True)
 
