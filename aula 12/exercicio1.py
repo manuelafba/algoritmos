@@ -15,9 +15,9 @@ mel = 0
 sugest = []
 
 cliente = [0]*50
-for i in range(3):
+for i in range(50):
     cliente[i] = RegCliente(0,0,0,'')
-for i in range(3):
+for i in range(50):
     cliente[i].idade = int(input("Digite sua idade:"))
     if cliente[i].idade < 18:
         menor18 += 1
@@ -37,12 +37,12 @@ for i in range(3):
     else: 
         boa += 1
 
-porcmenor = (menor18 / 3) * 100
-porcmeio = (meio / 3) * 100
-porcmaior = (maior65 / 3) * 100
-porcexc = (exc / 3) * 100
-porcboa = (boa / 3) * 100
-porcmel = (mel / 3) * 100
+porcmenor = (menor18 / 50) * 100
+porcmeio = (meio / 50) * 100
+porcmaior = (maior65 / 50) * 100
+porcexc = (exc / 50) * 100
+porcboa = (boa / 50) * 100
+porcmel = (mel / 50) * 100
 
 print(f"{porcmenor} % dos clientes são menores de 18 anos, {porcmeio} % têm idade entre 18 e 65 e {porcmaior} % têm mais de 65 anos")
 print(f"{porcexc} % dos clientes avaliam a praça de alimentação como excelente, {porcboa} % avaliam como boa e {porcmel} % acreditam que a praça precisa de melhorias")
